@@ -490,6 +490,11 @@ cz-conventional-changelog@3.3.0, cz-conventional-changelog@^3.3.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
+cz-sa-pattern@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/cz-sa-pattern/-/cz-sa-pattern-1.0.3.tgz#7216f850da9ad441b9be40da2eabf5f71aa15045"
+  integrity sha512-DJIlZWVrX8ZvIYY7IvgglwX/9S65rktYEMRQnYAmzw+w5l9pwbaMI3+OVrbxDpM7r3Sp6BQTJdKBgWv87Sh7MQ==
+
 dargs@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-8.1.0.tgz#a34859ea509cbce45485e5aa356fef70bfcc7272"

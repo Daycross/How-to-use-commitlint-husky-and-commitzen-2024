@@ -4,16 +4,16 @@
     "@commitlint/config-conventional": "^19.2.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-sa-pattern": "^1.0.3",
     "husky": "^9.0.11"
   },
   "scripts": {
     "prepare": "husky",
     "commit": "git-cz"
   },
-  
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-sa-pattern"
     }
   }
 }

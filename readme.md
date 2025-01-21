@@ -101,8 +101,12 @@ de construção do commit:
   # Instalando o commitizen
   yarn add commitizen -D
 
+  # Instalando o pattern custom
+  // Esse patern foi criado para uso interno da Seri.e Alfred
+  yarn add cz-sa-pattern -D
+
   # Criando a configuração
-  yarn commitizen init cz-conventional-changelog --yarn --dev --exact
+  yarn commitizen init cz-sa-pattern --yarn --dev --exact
 
   # Add um script no package.json para disparar o commitizen
   "scripts": {
