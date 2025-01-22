@@ -29,14 +29,21 @@ Além da nossa doc explicando quando usar os títulos e como descrever nossos co
 
 
 <h3 id="installing">Installing</h3>
-Com projeto já iniciado, precisamos initiar nosso repositório git:
+
+❗❗❗ Esse tutorial precisa do node ```18.x``` ou maior, caso não tenha instalado, instale o node em seu computador seguindo as instruções do site oficial do node.js.
+
+Com projeto já criado, precisamos iniciar nosso repositório git:
+
 ```git
   git init
 ```
 
+e associar ao seu repositório na sua plataforma de hospedagem de repositórios de preferência seguindo as instruções da plataforma.
+
 Feito isso, vamos às bibliotecas:
 
-<h4 id="commitlint">:Sparkles: Instalando o commitlint</h4>
+<h4 id="commitlint"> ✨ Instalando o commitlint</h4>
+
 * [Link para o site da biblioteca](https://commitlint.js.org/#/guides-local-setup)
 
 Primeiro, instalamos a versão *CLI do commitlint* e as configurações do *Conventional Commits* como
@@ -52,7 +59,8 @@ Feita a instalação, precisamos configurar o arquivo commitlint.config.js exten
   echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
 ```
 
-<h4 id="husky">:wolf: Instalando o husky</h4>
+<h4 id="husky">🐺 Instalando o husky</h4>
+
 * [Link para o site da biblioteca](https://typicode.github.io/husky/)
 
 Para instalarmos o Husky precisamos dos seguintes comandos:
@@ -73,7 +81,15 @@ Após a instalação e inicialização do husky, você terá que criar um arquiv
   echo "npx --no -- commitlint --edit \$1" > .husky/commit-msg
 ```
 
-Na nova versão do Husky, quando instalamnos o mesmo, um arquivo chamado **pre-commit** é gerado e no nosso caso não precisamos dele, você pode simplesmente apaga-lo usando `rm pre-commit`, apagando diretamente ou adicionando esse comando em algum script.
+Na nova versão do Husky, quando instalamnos o mesmo, um arquivo chamado **pre-commit** é gerado e no nosso caso não precisamos dele, você pode simplesmente acessar a pasta .husky e apaga-lo manualmente ou por meio do comando `rm pre-commit`.
+
+```bash
+  // Navegando até a pasta .husky
+  cd .husky
+
+  // Apagando o arquivo pre-commit
+  rm pre-commit
+```
 
 E assim você será capaz de verificar o funcionamento testando os commits.
 
@@ -90,7 +106,8 @@ E assim você será capaz de verificar o funcionamento testando os commits.
   git commit -m "chore: add commitlint e husky"
 ```
 
-<h4 id="commitzen">:sparkles: instalando o commitzen</h4>
+<h4 id="commitzen">✨ instalando o commitzen</h4>
+
 * [Link para o site da biblioteca](https://commitizen.github.io/cz-cli/)
 
 Agora que temos todo o necessário para automatizar nosso sistema de commits
