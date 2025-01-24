@@ -27,7 +27,6 @@ Trouxe uma forma simplificada de usar essas bibliotecas para facilitar nosso sis
 
 Além da nossa doc explicando quando usar os títulos e como descrever nossos commits, resolvi trazer uma ferramente para automatizar essa ação e torna-la mais simples.
 
-
 <h3 id="installing">Installing</h3>
 
 ❗❗❗ Esse tutorial precisa do node ```18.x``` ou maior, caso não tenha instalado, instale o node em seu computador seguindo as instruções do site oficial do node.js.
@@ -93,7 +92,7 @@ Na nova versão do Husky, quando instalamnos o mesmo, um arquivo chamado **pre-c
 
 E assim você será capaz de verificar o funcionamento testando os commits.
 
-```git 
+```git
   # Primeiro precisamos adicionar os arquivos para serem commitados
   git add .
 
@@ -133,7 +132,7 @@ de construção do commit:
 
 Com a biblioteca instalada e configurada, vamos fazer um commit para entender o passo a passo que ela traz na prática.
 
-```git 
+```git
   # Primeiro, precisamos adicionar os arquivos para serem commitados
   git add .
 
@@ -143,38 +142,28 @@ Com a biblioteca instalada e configurada, vamos fazer um commit para entender o 
 
 Ao iniciar a biblioteca ela vai mostrar um passo a passo:
 
-1) Select the type of change that you're committing: (Use arrow keys)
-
-Selecione o tipo de mudança que você está realizando: (Use as teclas de seta)
+1) Selecione o tipo do commit: (Use as setinhas)
 
 * É só usar as setas e enter para selecionar um tipo.
-2) What is the scope of this change (e.g. component or file name): (press enter to skip)
 
-Qual é o escopo desta mudança (por exemplo, componente ou nome do arquivo): (pressione Enter para pular)
+2) Informe o escopo deste commit (Nome do componente, arquivo ou do local): (Pressione enter para pular)
 
 * **Exemplo:** chore(eslint): obrigar o uso de aspas duplas no jsx.
 Em vez de colocar na mensagem do commit onde estava sendo feita a modificação, eu passei essa informação no escopo e a mensagem ficou mais sucinta.
 
-3) Write a short, imperative tense description of the change (max 82 chars):
+3) Escreva uma descrição curta e imperativa da mudança (máx. 72 caracteres):
 
-Escreva uma descrição breve e imperativa da mudança (máx. 82 caracteres):
+* Utilizando o exemplo a cima, essa é a mensagem que sucede o dois pontos, por exemplo: "obrigar o uso de aspas duplas no jsx"
 
-* Utilizando o exemplo a cima, essa é a mensagem que sucede o dois pontos: obrigar o uso de aspas duplas no jsx
-4) Provide a longer description of the change: (press enter to skip)
+4) Forneça uma descrição mais detalhada do commit.
 
-Forneça uma descrição mais longa da mudança: (pressione Enter para pular)
+* Essa opção é opcional e geralmente eu não preencho, mas caso necessário, você pode inserir um contexto mais amplo que descreve a modificação que foi feita.
 
-* Essa opção é opcional e geralmente eu não preencho, mas você pode inserir um contexto mais amplo que descreve a modificação que foi feita.
-5) Are there any breaking changes? (y/N)
+5) Liste quaisquer alterações que quebram a compatibilidade (Pressione enter para pular)
 
-Existem alterações importantes? (y/N)
+* Está ligada a quebra de compatibilidade estipulada pelo Semantic Versioning, se tiver conhecimento sobre isso, vai saber a resposta, senão quer dizer que não está fazendo versionamento e pode pular sem medo.
 
-* A tradução não descreve bem essa opção, ela está ligada a quebra de compatibilidade estipulada pelo Semantic Versioning, se tiver conhecimento sobre isso, vai saber a resposta, senão quer dizer que não está fazendo versionamento e pode pular sem medo.
-OBS: Sempre que estiver trabalhando no terminal e ele mostrar duas opções, sendo uma delas maiúscula, se pressionar enter ele seleciona a maiúscula que no caso é o N, ou você pode digitar N e pressionar enter.
-
-6) Does this change affect any open issues? (y/N)
-
-Essa mudança afeta algum problema em aberto? (y/N)
+6) Referências de issues?
 
 * Essa opção está ligada as Issues do GitHub, é uma opção mais avançada e não vou abordá-la nesse artigo, é só pressionar enter.
 E pronto, o commit vai ser realizado.
